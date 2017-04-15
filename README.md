@@ -2,7 +2,7 @@
 An app that consumes the [PixaBay API](https://pixabay.com/api/docs/) and enables the user to look for images. 
 
 ## Getting started
-Clone the repository and import the project in Android Studio, you can try the app installing the `pixabayApp.apk` available in the project root.
+Clone the repository and import the project in Android Studio, you can try the app installing the [`pixabayApp.apk`](https://github.com/gkaffka/pixabayapp/blob/master/pixabayApp.apk) available in the project root.
 You will also need to provide a key to access the Pixabay API, after getting the key, just put it in the `string.xml` file in the place of `YOUR_API_KEY_HERE`
 
 ## Dependencies

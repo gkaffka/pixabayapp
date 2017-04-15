@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.kaffka.pixabayapp.viewmodels.PixabayImageViewModel"/>
+
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_margin="4dp"
+        android:onClick="@{viewmodel.openDetails()}"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{viewmodel.imageUrl}"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorTransparentDark"
+                android:minHeight="50dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    style="@style/PixabayImageTextTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@{viewmodel.tags}"
+                    tools:text="IMAGE - FRUIT - FLOWER"/>
+
+                <TextView
+                    style="@style/PixabayImageTextUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@{viewmodel.userName}"
+                    tools:text="kaffka_PHOTOS"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</layout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PixabayApp</string>
+    <string name="search">Search Image</string>
+    <string name="PIXABAY_API_KEY">YOUR_API_KEY_HERE</string>
+    <string name="no_internet">Ops, we could not find an active internet connection…</string>
+    <string name="error">Ops, something is not right…</string>
+    <string name="retry">RETRY</string>
+    <string name="no_results">No results for the query :(</string>
+    <string name="like">Like</string>
+    <string name="favorite">Favorite</string>
+    <string name="comments">Comments</string>
+</resources>

@@ -3,6 +3,7 @@ An app that consumes the [PixaBay API](https://pixabay.com/api/docs/) and enable
 
 ## Getting started
 Clone the repository and import the project in Android Studio, you can try the app installing the `pixabayApp.apk` available in the project root.
+You will also need to provide a key to access the Pixabay API, after getting the key, just put it in the `string.xml` file in the place of `YOUR_API_KEY_HERE`
 
 ## Dependencies
 The depdendencies for the project are described in the Gradle script `build.gradle` of the app, just sync the project in Android Studio and you are ready to go :)

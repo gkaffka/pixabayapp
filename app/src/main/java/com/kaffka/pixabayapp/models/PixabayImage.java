@@ -75,7 +75,7 @@ public class PixabayImage {
     public String getTags() {
         if (tags == null) return "";
         if (tags.contains(", ")) {
-            String splitTags[] = tags.toUpperCase().split(", ");
+            String[] splitTags = tags.toUpperCase().split(", ");
             return TextUtils.join(" - ", splitTags);
         } else return tags;
     }

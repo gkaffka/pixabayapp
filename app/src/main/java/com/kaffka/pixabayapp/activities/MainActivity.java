@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         int position = pixabayImageList.size();
         pixabayImageList.addAll(response.getHits());
         pixabayImageListAdapter.notifyItemRangeInserted(position, position + 20);
-        if(pixabayImageList.isEmpty()) noResults.setVisibility(View.VISIBLE);
+        if (pixabayImageList.isEmpty()) noResults.setVisibility(View.VISIBLE);
         else noResults.setVisibility(View.GONE);
     }
 
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             resetImageList();
             progressBar.setVisibility(View.VISIBLE);
             noResults.setVisibility(View.GONE);
-            loadImages(1,currentQuery);
+            loadImages(1, currentQuery);
             return true;
         }
 
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void resetImageList(){
+    private void resetImageList() {
         pixabayImageList.clear();
         infiniteScrollListener.resetCurrentPage();
         pixabayImageListAdapter.notifyDataSetChanged();
